@@ -1,0 +1,44 @@
+###
+GET http://localhost:3001/sqlite?limit=12&skip=0
+###
+GET http://localhost:3001/sqlite/1042
+###
+POST http://localhost:3001/sqlite
+Content-Type: application/json
+
+  {
+    "id": 1,
+    "title": "His mother had always taught him",
+    "category": "news",
+    "body": "His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind.",
+    "tags": "history,american,crime",
+    "user": 9,
+    "likes": 2
+  }
+
+###
+POST http://localhost:3001/sqlite/many
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "title": "His mother had always taught him",
+    "category": "news",
+    "body": "His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind.",
+    "tags": "history,american,crime",
+    "user": 9,
+    "likes": 2
+  }
+]
+
+###
+PATCH http://localhost:3001/sqlite/10
+Content-Type: application/json
+
+{
+    "title": "You can use examples below to check how DummyJSON works!"
+}
+
+###
+DELETE http://localhost:3001/sqlite/10

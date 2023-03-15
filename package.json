@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-mysql-rest-api",
+  "version": "1.0.0",
+  "description": "Complete CRUD app with MySQL and Expressjs",
+  "main": "app.js",
+  "author": "Funwi Che",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.21"
+  }
+}
